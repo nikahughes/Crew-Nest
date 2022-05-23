@@ -1,0 +1,15 @@
+.form-check,
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+}
+.form-check-label {
+  .form-check & {
+    color: $input-placeholder-color;
+  }
+  .form-check:hover &,
+  .form-check:focus &,
+  .form-check-input:checked + & {
+    color: $input-focus-color;
+  }
+}

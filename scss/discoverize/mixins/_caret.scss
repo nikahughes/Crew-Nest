@@ -1,0 +1,62 @@
+// scss-docs-start caret-mixins
+@mixin caret-font {
+  font-family: "Font Awesome 5 Free"; //stylelint-disable-line font-family-no-missing-generic-family-keyword
+  font-style: normal;
+  font-weight: 900;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+@mixin caret-down {
+  content: "\f107";
+}
+
+@mixin caret-up {
+  content: "\f106";
+}
+
+@mixin caret-end {
+  content: "\f105";
+}
+
+@mixin caret-start {
+  content: "\f104";
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      margin-left: $caret-spacing;
+      // vertical-align: $caret-vertical-align;
+      @if $direction == down {
+        @include caret-font();
+        @include caret-down();
+      } @else if $direction == up {
+        @include caret-font();
+        @include caret-up();
+      } @else if $direction == end {
+        @include caret-font();
+        @include caret-end();
+      }
+    }
+
+    @if $direction == start {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        @include caret-font();
+        @include caret-start();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
+// scss-docs-end caret-mixins

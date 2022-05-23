@@ -1,0 +1,65 @@
+// stylelint-disable declaration-no-important
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  color: $section-title-color;
+}
+
+.section-content {
+  > img,
+  figure img {
+    max-width: 100%;
+  }
+}
+
+.section__inverse { // stylelint-disable-line selector-class-pattern
+  > .bg {
+    background-color: $section-inverse-bg-color;
+  }
+
+  .section-title {
+    color: $section-inverse-title-color;
+  }
+
+  .section-header,
+  .section-content {
+    color: $section-inverse-color;
+  }
+  .section-header p a,
+  .section-content a {
+    color: $section-inverse-link-color;
+    &:hover,
+    &:focus {
+      color: $section-inverse-link-hover-color;
+    }
+  }
+}
+
+.section.is-sticky-inverse:not(.is-sticky) {
+  > .bg {
+    background-color: $section-inverse-bg-color !important;
+  }
+
+  .section-title {
+    color: $section-inverse-title-color;
+  }
+
+  .section-header,
+  .section-content {
+    color: $section-inverse-color;
+  }
+
+  .section-header p a,
+  .section-content a {
+    color: $section-inverse-link-color;
+    &:hover,
+    &:focus {
+      color: $section-inverse-link-hover-color;
+    }
+  }
+}

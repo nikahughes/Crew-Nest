@@ -1,0 +1,286 @@
+// stylelint-disable selector-max-class
+// stylelint-disable selector-max-compound-selectors
+// stylelint-disable declaration-no-important
+
+.nav-link,
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include text-truncate();
+}
+
+.nav-dropdown-menu {
+  // padding-right: $navbar-nav-link-padding-x;
+  // padding-left: $navbar-nav-link-padding-x;
+  margin-top: 0 !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: $box-shadow-sm;
+}
+
+// .nav-dropdown-header,
+// .nav-dropdown-link {
+//   padding-top: ($nav-link-padding-y / 2);
+//   padding-bottom: ($nav-link-padding-y / 2);
+// }
+
+// .nav-dropdown-link {
+//   font-size: $nav-link-font-size;
+//   font-weight: $nav-link-font-weight;
+// }
+
+// .nav-dropdown-divider {
+//   margin-top: $dropdown-padding-y;
+//   margin-bottom: $dropdown-padding-y;
+//   border-top-style: solid;
+//   border-top-width: 1px;
+// }
+
+// .navbar-light {
+//   @include navbar-variant($navbar-light-bg);
+//   @include navbar-dropdown-variant($navbar-light-dropdown-bg, $navbar-light-dropdown-color, $navbar-light-dropdown-hover-color, $navbar-light-dropdown-active-color, $navbar-light-dropdown-disabled-color, darken($navbar-light-dropdown-bg, 20%));
+// }
+
+// .navbar-dark {
+//   @include navbar-variant($navbar-dark-bg);
+//   @include navbar-dropdown-variant($navbar-dark-dropdown-bg, $navbar-dark-dropdown-color, $navbar-dark-dropdown-hover-color, $navbar-dark-dropdown-active-color, $navbar-dark-dropdown-disabled-color, lighten($navbar-dark-dropdown-bg, 20%));
+// }
+
+.navbar-toggle-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-default {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  @include media-breakpoint-up($navbar-expand-breakpoint) {
+
+    &.navbar {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .navbar-end {
+      order: 10;
+    }
+
+    .btn-close-menu {
+      display: none;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+
+      .dropdown-menu {
+        position: absolute;
+      }
+
+      .nav-link {
+        padding: 1.4rem $navbar-nav-link-padding-x;
+      }
+    }
+
+    .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+
+    .nav-dropdown-menu {
+      // padding-right: 0;
+      // padding-left: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    // .nav-dropdown-header,
+    // .nav-dropdown-link {
+    //   padding: $navbar-nav-dropdown-link-padding-y $navbar-nav-link-padding-x;
+    // }
+
+    // .nav-dropdown-link {
+    //   &.dropdown-toggle::after {
+    //     @include caret-end();
+    //   }
+    // }
+
+    .dropdown-menu .dropdown-menu {
+      top: calc(#{$dropdown-padding-y} * -1);
+      left: 100%;
+    }
+  }
+}
+
+
+.navbar-brand-img-light,
+.navbar-brand-img-dark {
+  opacity: 0;
+  transition: $transition-base;
+}
+.navbar-brand-img-light {
+  position: absolute;
+}
+.navbar-light {
+  .navbar-brand-img-light {
+    opacity: 1;
+  }
+  @include navbar-variant($navbar-light-bg, $navbar-light-border-color);
+}
+.navbar-dark {
+  .navbar-brand-img-dark {
+    opacity: 1;
+  }
+  @include navbar-variant($navbar-dark-bg, $navbar-dark-border-color);
+}
+
+.navbar {
+
+  .nav-link.show,
+  .nav-link.active,
+  .dropdown:hover > a,
+  .dropdown:focus > a {
+    color: $navbar-light-active-color;
+  }
+
+  @include navbar-dropdown-variant($navbar-light-dropdown-bg, $navbar-light-dropdown-color, $navbar-light-dropdown-hover-color, $navbar-light-dropdown-active-color, $navbar-light-dropdown-disabled-color, darken($navbar-light-dropdown-bg, 20%));
+}
+
+@include media-breakpoint-down($navbar-expand-breakpoint) {
+
+  .is-sticky-inverse:not(.is-sticky) .navbar-default:not(.is-collapsed) {
+    .navbar-brand-img-light {
+      opacity: 0;
+    }
+    .navbar-brand-img-dark {
+      opacity: 1;
+    }
+    .navbar-brand {
+      color: $navbar-dark-brand-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-brand-hover-color;
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+
+        &:hover,
+        &:focus {
+          color: $navbar-dark-hover-color;
+        }
+
+        &.disabled {
+          color: $navbar-dark-disabled-color;
+        }
+      }
+
+      .show > .nav-link,
+      .nav-link.active {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    .btn-link {
+      color: $navbar-dark-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-hover-color;
+      }
+    }
+
+    .navbar-toggler {
+      color: $navbar-dark-color;
+      border-color: $navbar-dark-toggler-border-color;
+    }
+
+    .navbar-toggler-icon {
+      background-image: escape-svg($navbar-dark-toggler-icon-bg);
+    }
+
+    .navbar-text {
+      color: $navbar-dark-color;
+      a,
+      a:hover,
+      a:focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    // @include navbar-variant($navbar-dark-bg, $navbar-dark-border-color);
+  }
+}
+
+@include media-breakpoint-up($navbar-expand-breakpoint) {
+  .is-sticky-inverse:not(.is-sticky):not(:hover) .navbar-default {
+    .navbar-brand-img-light {
+      opacity: 0;
+    }
+    .navbar-brand-img-dark {
+      opacity: 1;
+    }
+    .navbar-brand {
+      color: $navbar-dark-brand-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-brand-hover-color;
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+
+        &:hover,
+        &:focus {
+          color: $navbar-dark-hover-color;
+        }
+
+        &.disabled {
+          color: $navbar-dark-disabled-color;
+        }
+      }
+
+      .show > .nav-link,
+      .nav-link.active {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    .btn-link {
+      color: $navbar-dark-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-dark-hover-color;
+      }
+    }
+
+    .navbar-toggler {
+      color: $navbar-dark-color;
+      border-color: $navbar-dark-toggler-border-color;
+    }
+
+    .navbar-toggler-icon {
+      background-image: escape-svg($navbar-dark-toggler-icon-bg);
+    }
+
+    .navbar-text {
+      color: $navbar-dark-color;
+      a,
+      a:hover,
+      a:focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+
+    // @include navbar-variant($navbar-dark-bg, $navbar-dark-border-color);
+  }
+}

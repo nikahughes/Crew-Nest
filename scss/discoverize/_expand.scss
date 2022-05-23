@@ -1,0 +1,42 @@
+
+// .expand-w,
+// .expand-w-start {
+//   padding-right: calc(var(--#{$variable-prefix}gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+//   padding-left: calc(var(--#{$variable-prefix}gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+//   margin-right: calc(var(--#{$variable-prefix}gutter-x) / -2); // stylelint-disable-line function-disallowed-list
+//   margin-left: calc(var(--#{$variable-prefix}gutter-x) / -2); // stylelint-disable-line function-disallowed-list
+// }
+
+@if $enable-grid-classes {
+  @each $breakpoint, $container-max-width in $container-max-widths {
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      %expand-container-#{$breakpoint} {
+        .expand-w {
+          width: calc(((100vw - #{$container-max-width}) / 2) + 100%);
+        }
+        .expand-w-start {
+          // width: calc(((100vw - #{$container-max-width}) / 2) + (100% - ((var(--#{$variable-prefix}gutter-x) / -2) * 2 )));
+          width: calc(((100vw - #{$container-max-width}) / 2) + 100%);
+          margin-left: calc(100% - (((100vw - #{$container-max-width}) / 2) + 100% + 3px));
+        }
+      }
+
+      // Extend each breakpoint which is smaller or equal to the current breakpoint
+      $extend-breakpoint: true;
+
+      @each $name, $width in $grid-breakpoints {
+        @if ($extend-breakpoint) {
+          .container#{breakpoint-infix($name, $grid-breakpoints)} {
+            @extend %expand-container-#{$breakpoint};
+          }
+
+          // Once the current breakpoint is reached, stop extending
+          @if ($breakpoint == $name) {
+            $extend-breakpoint: false;
+          }
+        }
+      }
+    }
+  }
+}

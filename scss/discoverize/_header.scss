@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  z-index: $zindex-fixed;
+}
+
+.header.position-absolute,
+.header.position-fixed {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-bg {
+  z-index: -1;
+  background-color: $header-bg-color;
+}
+
+@include media-breakpoint-down($navbar-expand-breakpoint) {
+  .is-sticky-inverse:not(.is-sticky) {
+    .header-bg {
+      background-color: $header-inverse-bg-color;
+    }
+  }
+  .navbar.is-collapsed ~ .header-bg {
+    background-color: $header-bg-color;
+  }
+}
+
+@include media-breakpoint-up($navbar-expand-breakpoint) {
+  .is-sticky-inverse:not(.is-sticky):not(:hover) {
+    .header-bg {
+      background-color: $header-inverse-bg-color;
+    }
+  }
+}
+

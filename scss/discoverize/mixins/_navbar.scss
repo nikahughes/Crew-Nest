@@ -1,0 +1,55 @@
+// Navbar variants
+//
+// Easily pump out light and dark style for navbar dropdown
+
+@mixin navbar-variant(
+  $background,
+  $border
+){
+  // &.border-bottom {
+  //   border-bottom-color: $border !important; // stylelint-disable-line  declaration-no-important
+  // }
+  // > .bg {
+  //   background-color: $background;
+  // }
+}
+
+@mixin navbar-dropdown-variant(
+  $background,
+  $color,
+  $hover-color,
+  $active-color,
+  $disabled-color,
+  $divider
+) {
+  .nav-dropdown-link {
+    color: $color;
+
+    &:hover,
+    &:focus, {
+      color: $hover-color;
+    }
+
+    &.disabled {
+      color: $disabled-color;
+    }
+  }
+
+  .show > .nav-dropdown-link,
+  .nav-dropdown-link.active,
+  .nav-dropdown-link.show {
+    color: $active-color;
+  }
+
+  // .nav-dropdown-header {
+  //   color: rgba($color, .4);
+  // }
+
+  // .nav-dropdown-menu {
+  //   background-color: $background;
+  // }
+
+  // .nav-dropdown-divider {
+  //   border-top-color: $divider;
+  // }
+}

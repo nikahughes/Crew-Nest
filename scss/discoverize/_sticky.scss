@@ -1,0 +1,95 @@
+// stylelint-disable declaration-no-important
+// stylelint-disable selector-no-qualifying-type
+
+.sticky.is-sticky {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-fixed !important;
+  transition: $transition-base;
+
+  .d-block-sticky {
+    display: block !important;
+  }
+  .d-none-sticky {
+    display: none !important;
+  }
+  .o-100-sticky {
+    opacity: 1 !important;
+  }
+  .o-0-sticky {
+    opacity: 0 !important;
+  }
+}
+.header.is-sticky {
+  z-index: ($zindex-fixed + 1) !important;
+}
+
+.sticky-placeholder {
+  position: relative;
+  z-index: -1;
+  .sticky.is-sticky + & {
+    margin-top: 0 !important;
+  }
+  .position-fixed + &,
+  .position-absolute + & {
+    height: 0 !important;
+    margin-top: 0 !important;
+    visibility: hidden;
+  }
+}
+
+.is-sticky-shadow-none.is-sticky {
+  .shadow-sm,
+  .shadow,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+}
+
+@include media-breakpoint-down($navbar-expand-breakpoint) {
+
+  // [data-scroll="sticky"]:not(.is-sticky) .is-sticky-bg-o-90:not(.is-collapsed) > .bg {
+  //   opacity: .9;
+  // }
+
+  // [data-scroll="sticky"]:not(.is-sticky) .is-sticky-bg-o-0:not(.is-collapsed) > .bg {
+  //   opacity: 0;
+  // }
+
+  .is-sticky-bg-o-90:not(.is-sticky) > .bg {
+    opacity: .9;
+  }
+
+  .is-sticky-bg-o-0:not(.is-sticky) > .bg {
+    opacity: 0;
+  }
+
+  .navbar.is-collapsed ~ .bg {
+    opacity: 1 !important;
+  }
+}
+
+@include media-breakpoint-up($navbar-expand-breakpoint) {
+
+  [data-scroll="sticky"]:not(.is-sticky):not(header) .is-sticky-inverse,
+  header[data-scroll="sticky"]:not(.is-sticky):not(:hover) .is-sticky-inverse {
+    &.is-sticky-bg-o-0 > .bg {
+      opacity: 0;
+    }
+    &.is-sticky-bg-o-90 > .bg {
+      opacity: .9;
+    }
+  }
+
+  [data-scroll="sticky"]:not(.is-sticky):not(header).is-sticky-bg-o-90 > .bg,
+  header[data-scroll="sticky"]:not(.is-sticky):not(:hover).is-sticky-bg-o-90 > .bg {
+    opacity: .9;
+  }
+
+  [data-scroll="sticky"]:not(.is-sticky):not(header).is-sticky-bg-o-0 > .bg,
+  header[data-scroll="sticky"]:not(.is-sticky):not(:hover).is-sticky-bg-o-0 > .bg {
+    opacity: 0;
+  }
+}

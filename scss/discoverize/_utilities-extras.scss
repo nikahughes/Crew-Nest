@@ -1,0 +1,34 @@
+// stylelint-disable declaration-no-important
+
+@each $color, $value in $theme-colors {
+  a.text-#{$color}:not(:hover),
+  .text-#{$color} a:not(:hover) {
+    color: $value;
+  }
+}
+
+@each $name, $opacity in $opacities {
+  .o-hover-all:hover .o-#{$name}-hover,
+  .scroll-focus > .o-hover-all .o-#{$name}-hover {
+    opacity: $opacity !important;
+  }
+}
+
+.scroll-focus {
+  > .shadow-hover {
+    box-shadow: $box-shadow !important;
+  }
+  > .shadow-sm-hover {
+    box-shadow: $box-shadow-sm !important;
+  }
+  > .shadow-lg-hover {
+    box-shadow: $box-shadow-lg !important;
+  }
+}
+
+// a[class^="text-"],
+// a[class*="text-"] {
+//   &:hover {
+//     color: $link-hover-color !important;
+//   }
+// }

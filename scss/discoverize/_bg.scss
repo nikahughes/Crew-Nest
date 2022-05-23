@@ -1,0 +1,62 @@
+// stylelint-disable declaration-no-important
+
+.bg {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  &.position-absolute {
+    top: 0;
+    left: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &.vw-100 {
+    right: 50% !important;
+    left: 50% !important;
+    width: 100vw !important;
+    margin-right: -50vw !important;
+    margin-left: -50vw !important;
+  }
+}
+
+.bg-img {
+  position: relative;
+  overflow: hidden;
+  .img {
+    visibility: hidden;
+  }
+}
+.img-placeholder {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .zoom-bg-img .bg-img & {
+    transition: all .5s;
+  }
+  .zoom-bg-img:hover .bg-img & {
+    transform: scale(1.2);
+  }
+  .invisible + & {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
+}
+.bg-size-contain {
+  background-size: contain;
+}
+.bg-pos-cb {
+  background-position: center bottom;
+}
+.ratio4-3 {
+  width: 100%;
+  height: 0;
+  padding: 0;
+  padding-bottom: calc(100% * 3 / 4);
+  background-size: cover;
+}

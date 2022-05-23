@@ -1,0 +1,12 @@
+
+.counter {
+  counter-reset: custom;
+}
+
+.counter-number {
+  width: 30px;
+  &::before {
+    content: counter(custom) ".";
+    counter-increment: custom;
+  }
+}

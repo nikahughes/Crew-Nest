@@ -1,0 +1,27 @@
+@include media-breakpoint-up($navbar-expand-breakpoint) {
+  .dropdown-hover {
+    &:hover,
+    &:focus {
+      > .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+  .dropdown-menu-end {
+    --bs-position: end;
+    right: 0;
+    left: auto;
+  }
+}
+
+.dropdown-divider {
+  color: $dropdown-border-color;
+}
+
+.dropdown__mega { // stylelint-disable-line selector-class-pattern
+  position: initial;
+  > .dropdown-menu {
+    left: 0;
+    width: 100%;
+  }
+}

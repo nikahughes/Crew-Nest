@@ -1,0 +1,40 @@
+
+.searchbox-form {
+  .form-options-backdrop:not(.collapsed) ~ &,
+  .modal .form-options-backdrop ~ & {
+    > .bg {
+      top: -.3rem;
+      height: calc(100% + .6rem);
+    }
+    > .form-options {
+      margin-top: .3rem;
+    }
+  }
+}
+
+.searchbox-btn-close,
+.modal-searchbox .btn-close[data-bs-dismiss="modal"] {
+  margin-top: -.3rem;
+}
+
+.searchbox-navbar {
+  .searchbox-form {
+    width: 100%;
+    min-width: 360px;
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include media-breakpoint-up(lg, $grid-breakpoints) {
+    .searchbox-form {
+      width: 360px;
+    }
+    .form-options-backdrop:not(.collapsed) ~ .searchbox-form {
+      width: 720px;
+    }
+  }
+  .searchbox-filter-collapse {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}

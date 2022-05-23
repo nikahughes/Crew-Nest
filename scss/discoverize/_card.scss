@@ -1,0 +1,114 @@
+.card-img-top,
+.card-img-bottom {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+@if $card-border-width != 0 {
+  .card-img-top,
+  .card-img-bottom {
+    width: calc(100% + #{$card-border-width * 2});
+    margin-right: -$card-border-width;
+    margin-left: -$card-border-width;
+  }
+
+  .card-img-top {
+    margin-top: -$card-border-width;
+  }
+
+  .card-img-bottom {
+    margin-bottom: -$card-border-width;
+  }
+}
+
+.card-body.blockquote {
+  position: relative;
+  margin-bottom: 32px;
+
+  &:first-child {
+    padding-bottom: 32px;
+  }
+  > .img {
+    position: absolute;
+    bottom: -32px;
+    // transform: translateX(-50%);
+    .text-start & {
+      left: 0;
+    }
+    .text-right & {
+      right: 0;
+    }
+    .text-center & {
+      right: 0;
+      left: 0;
+    }
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+.card-icons {
+  position: relative;
+  padding: 0 $card-spacer-x;
+  margin-top: -18px;
+  margin-bottom: -18px;
+}
+
+.card-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 2px solid $card-bg;
+  border-radius: 50%;
+  &:hover {
+    border: 2px solid $card-bg;
+  }
+}
+
+.card__minimal { // stylelint-disable-line selector-class-pattern
+  background-color: transparent;
+  .card-img-top,
+  .card-img-bottom,
+  .bg-img.rounded-start,
+  .bg-img.rounded-end {
+    @include border-radius($card-inner-border-radius);
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-icons {
+    padding: 0;
+  }
+  .card-header,
+  .card-footer {
+    padding: 0;
+    background-color: transparent;
+  }
+  .card-header-tabs {
+    margin-bottom: 0;
+  }
+}
+.card.rounded-0 {
+  .card-img-top,
+  .card-img-bottom {
+    @include border-radius(0);
+  }
+}
+
+.card-peek {
+  transition: $transition-base;
+  transform: translate3d(0, 100%, 0);
+}
+.card-peek-show {
+  transition: $transition-base;
+  transform: translate3d(0, -100%, 0);
+}
+.card:hover .card-peek,
+.card:hover .card-peek-show {
+  transform: translate3d(0, 0, 0);
+}

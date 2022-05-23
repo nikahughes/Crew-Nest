@@ -1,0 +1,50 @@
+{
+  "name": "discoverize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "",
+  "paths": {
+    "css": "dist/assets/css/discoverize"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.6.1",
+    "install": "^0.13.0",
+    "photoswipe": "^4.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.27.5",
+    "clean-css-cli": "^5.3.3",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.2",
+    "shx": "^0.3.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0"
+  },
+  "sass": "scss/main/discoverize.scss",
+  "scripts": {
+    "test-scss": "stylelint scss/",
+    "css-prefix-theme-default": "postcss --replace dist/assets/css/discoverize-default.css --use autoprefixer --map",
+    "css-compile-theme-default": "node-sass --output-style expanded --source-map true --source-map-contents true  --precision 6 scss/colorschemes/default/default.scss dist/assets/css/discoverize-default.css",
+    "css-minify-theme-default": "./node_modules/.bin/cleancss --input-source-map dist/assets/css/discoverize-default.css.map --with-rebase --output dist/assets/css/discoverize-default.min.css dist/assets/css/discoverize-default.css",
+    "css-prefix-theme-classic": "postcss --replace dist/assets/css/discoverize-classic.css --use autoprefixer --map",
+    "css-compile-theme-classic": "node-sass --output-style expanded --source-map true --source-map-contents true  --precision 6 scss/colorschemes/classic/classic.scss dist/assets/css/discoverize-classic.css",
+    "css-minify-theme-classic": "./node_modules/.bin/cleancss --input-source-map dist/assets/css/discoverize-classic.css.map --with-rebase --output dist/assets/css/discoverize-classic.min.css dist/assets/css/discoverize-classic.css",
+    "css-prefix-theme-minimal": "postcss --replace dist/assets/css/discoverize-minimal.css --use autoprefixer --map",
+    "css-compile-theme-minimal": "node-sass --output-style expanded --source-map true --source-map-contents true  --precision 6 scss/colorschemes/minimal/minimal.scss dist/assets/css/discoverize-minimal.css",
+    "css-minify-theme-minimal": "./node_modules/.bin/cleancss --input-source-map dist/assets/css/discoverize-minimal.css.map --with-rebase --output dist/assets/css/discoverize-minimal.min.css dist/assets/css/discoverize-minimal.css",
+    "css": "npm-run-all --sequential css-compile* css-prefix* css-minify*",
+    "vendor-photoswipe": "shx mkdir -p dist/assets/vendor/photoswipe && shx cp -r node_modules/photoswipe/dist/* dist/assets/vendor/photoswipe",
+    "watch-css": "nodemon -L --watch scss/ --ext scss --exec 'npm run css'",
+    "server": "browser-sync start --server 'dist' --files '*.html' '**/*.html' 'assets/css/*.min.css' 'assets/js/*.js' --no-open --reload-delay 500",
+    "start": "npm-run-all --parallel watch-* server vendor-*",
+    "start-test": "npm-run-all --parallel watch-* test-* server"
+  }
+}

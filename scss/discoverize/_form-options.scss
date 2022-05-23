@@ -1,0 +1,48 @@
+// stylelint-disable selector-max-class
+// stylelint-disable declaration-no-important
+
+.form-is-focus.position-absolute {
+  opacity: 1;
+  transition: $transition-base;
+}
+
+.form-options-backdrop {
+  z-index: $zindex-modal-backdrop;
+  opacity: $modal-backdrop-opacity;
+  .modal & {
+    display: none;
+    opacity: 0;
+  }
+  &.collapsed {
+    z-index: -20;
+    display: none;
+    ~ .position-relative,
+    ~ .position-absolute {
+      .form-is-focus:not(.position-absolute) {
+        display: none !important;
+      }
+      .form-is-focus.position-absolute {
+        z-index: -10;
+        opacity: 0;
+      }
+    }
+  }
+  .header &.collapsed ~ .position-relative,
+  .header &.collapsed ~ .position-absolute, {
+    z-index: ($zindex-dropdown - 1);
+  }
+  &:not(.collapsed) ~ .position-relative,
+  &:not(.collapsed) ~ .position-absolute {
+    z-index: ($zindex-modal - 1);
+    .form-is-not-focus {
+      display: none !important;
+    }
+  }
+}
+.form-options-collapse {
+  .is-sticky & {
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

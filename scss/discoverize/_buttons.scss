@@ -1,0 +1,81 @@
+// stylelint-disable declaration-no-important
+
+.btn-default {
+  color: $btn-default-color;
+  background-color: $btn-default-bg-color;
+  border-color: $btn-default-border-color;
+}
+.btn-default-inverse {
+  color: $btn-default-inverse-color;
+  background-color: $btn-default-inverse-bg-color;
+  border-color: $btn-default-inverse-border-color;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-default.btn-outline-#{$color},
+  .btn-default-inverse.btn-outline-#{$color} {
+    background-color: transparent;
+
+    &:hover,
+    &:active:hover,
+    &.active:hover,
+    &.dropdown-toggle.show:hover,
+    .btn-check + &:hover {
+      color: $value;
+      background-color: transparent;
+      border-color: $value;
+    }
+
+    .btn-check:checked + &,
+    .btn-check:active + &,
+    &:active,
+    &.active,
+    &.dropdown-toggle.show {
+      color: $btn-default-color;
+      background-color: transparent;
+      border-color: $input-focus-border-color;
+    }
+  }
+}
+
+.btn-check + .btn {
+  padding-right: 1rem;
+  padding-left: 1.75rem;
+  i {
+    position: absolute;
+    left: .5rem;
+    margin-top: .25rem;
+    font-size: .75rem;
+    visibility: hidden;
+  }
+}
+.btn-check:checked + .btn i {
+  visibility: visible;
+}
+
+.btn-select-dropdown .dropdown-menu {
+  max-height: 230px;
+  overflow: auto;
+}
+
+.btn-icon {
+  span {
+    display: inline-block;
+    &:first-child {
+      // width: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.btn-more {
+  > i {
+    padding-right: 3px;
+    padding-left: 3px;
+    transition: $transition-base;
+  }
+  &:hover > i {
+    padding-right: 0;
+    padding-left: 6px;
+  }
+}

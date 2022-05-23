@@ -1,0 +1,250 @@
+// Variables
+//
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-negative-margins:     true !default;
+$enable-caret:                true !default;
+
+
+// Spacing
+//
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5.3,
+  7: $spacer * 7.5,
+) !default;
+
+
+// Opacities
+$opacities: (
+  0: 0,
+  10: .1,
+  25: .25,
+  50: .5,
+  75: .75,
+  90: .9,
+  100: 1,
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$transition-base:             all .2s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+
+
+// caret-variables
+$caret-spacing:               .4em !default;
+
+
+// Buttons + Forms
+//
+$border-color: rgba($gray-600, .25) !default;
+
+// btn-default
+$btn-default-color:                   $body-color !default;
+$btn-default-bg-color:                $gray-400 !default;
+$btn-default-border-color:            $border-color !default;
+
+$btn-default-inverse-color:           $body-inverse-color !default;
+$btn-default-inverse-bg-color:        $gray-600 !default;
+$btn-default-inverse-border-color:    $border-color !default;
+
+$btn-link-color:                      $btn-default-color !default;
+
+
+// Navs
+//
+$nav-link-font-weight:              700 !default;
+
+$nav-tabs-link-active-color:        $link-hover-color !default;
+
+// Navbar
+//
+$navbar-padding-y:                  0 !default;
+
+$navbar-nav-link-padding-x:         1.2rem !default;
+
+$navbar-nav-dropdown-link-padding-y: .35rem !default;
+
+$navbar-toggler-focus-width:        0 !default;
+$navbar-expand-breakpoint:          lg !default;
+
+$navbar-brand-padding-y:            0 !default;
+
+$navbar-dark-bg:                    lighten($dark, 2%) !default;
+$navbar-dark-border-color:          rgba($white, .1) !default;
+$navbar-dark-color:                 rgba($white, .85) !default;
+$navbar-dark-hover-color:           $primary !default;
+$navbar-dark-active-color:          $primary !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+$navbar-dark-dropdown-bg:                 lighten($dark, 2%) !default;
+$navbar-dark-dropdown-color:              $navbar-dark-color !default;
+$navbar-dark-dropdown-hover-color:        $navbar-dark-hover-color !default;
+$navbar-dark-dropdown-disabled-color:     $navbar-dark-disabled-color !default;
+$navbar-dark-dropdown-active-color:       $navbar-dark-active-color !default;
+
+$navbar-light-bg:                   lighten($white, 2%) !default;
+$navbar-light-border-color:         $gray-200 !default;
+$navbar-light-color:                rgba($black, .85) !default;
+$navbar-light-hover-color:          $primary !default;
+$navbar-light-active-color:         $primary !default;
+$navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: rgba($black, .1) !default;
+
+$navbar-light-dropdown-bg:                lighten($white, 2%) !default;
+$navbar-light-dropdown-color:             $navbar-light-color !default;
+$navbar-light-dropdown-hover-color:       $navbar-light-hover-color !default;
+$navbar-light-dropdown-disabled-color:    $navbar-light-disabled-color !default;
+$navbar-light-dropdown-active-color:      $navbar-light-active-color !default;
+
+$nav-link-font-size: ($font-size-base * .925) !default;
+$nav-link-font-weight: null !default;
+
+// $box-shadow: rgba(0, 0, 0, .1) 0 10px 15px -3px, rgba(0, 0, 0, .05) 0 4px 6px -2px !default;
+
+// $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0 .25rem 1rem rgba($black, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+
+
+// Dropdowns
+//
+
+$dropdown-min-width:          12rem !default;
+$dropdown-spacer:             0 !default;
+$dropdown-font-size:          ($font-size-base * .9) !default;
+$dropdown-border-color:       $border-color !default;
+// $dropdown-divider-bg:         $border-color !default;
+
+$dropdown-link-color:         $dark !default;
+// $dropdown-link-hover-color:   shade-color($dropdown-link-color, 10%) !default;
+$dropdown-link-hover-color:   $link-hover-color !default;
+$dropdown-link-hover-bg:      transparent !default;
+
+$dropdown-link-active-color:  $dropdown-link-hover-color !default;
+$dropdown-link-active-bg:     $dropdown-link-hover-bg !default;
+
+$dropdown-item-padding-x:     1.2rem !default;
+
+$dropdown-header-color:       rgba($black, .85) !default;
+$dropdown-header-padding:     .5rem $dropdown-item-padding-x !default;
+
+
+// Buttons and Forms
+
+$input-btn-font-size:         $font-size-base * .9 !default;
+$input-border-color:          $border-color !default;
+
+// Close
+//
+$btn-close-width:         24px !default;
+$btn-close-height:       24px !default;
+
+
+// Modal
+$modal-sm:                          380px !default;
+
+
+// Utilities
+//
+
+// assign new utilities classes
+$utilities: (
+  "widthpx": (
+    property: width,
+    class: w,
+    responsive: true,
+    values: (
+      220px: 220px,
+      264px: 264px,
+      330px: 330px,
+      480px: 480px,
+      640px: 640px,
+    )
+  ),
+  "heightpx": (
+    property: height,
+    class: h,
+    responsive: true,
+    values: (
+      220px: 220px,
+      264px: 264px,
+      330px: 330px,
+      480px: 480px,
+      640px: 640px,
+    )
+  ),
+  "min-heightpx": (
+    property: min-height,
+    class: min-h,
+    responsive: true,
+    values: (
+      220px: 220px,
+      264px: 264px,
+      330px: 330px,
+      480px: 480px,
+      640px: 640px,
+    )
+  ),
+  "opacity": (
+    property: opacity,
+    class: o,
+    state: hover,
+    values: $opacities
+  ),
+  "z-index": (
+    property: z-index,
+    class: zi,
+    values: (
+      n1: -1,
+      1: 1,
+      20: 20,
+      30: 30,
+    )
+  ),
+  "transitions": (
+    property: transition,
+    class: trans,
+    values: (
+      base: $transition-base,
+      fade: $transition-fade,
+    )
+  ),
+) !default;
+
+
+// Discoverize Components
+
+// header
+$header-bg-color:                   $white !default;
+$header-inverse-bg-color:           $dark !default;
+
+
+// Section
+//
+//
+$section-title-color:               $dark !default;
+
+$section-inverse-title-color:       $white !default;
+
+$section-inverse-color:             $body-inverse-color !default;
+$section-inverse-link-color:        $link-inverse-color !default;
+$section-inverse-link-hover-color:  $link-inverse-hover-color !default;
+
+$section-inverse-bg-color:          $dark !default;

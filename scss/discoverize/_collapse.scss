@@ -1,0 +1,12 @@
+
+.toggle-is-collapsed {
+  display: none;
+  .collapsed & {
+    display: inline-block;
+  }
+}
+[data-bs-toggle="collapse"].collapsed {
+  .toggle-not-collapsed {
+    display: none;
+  }
+}
