@@ -21,15 +21,21 @@
     <!-- Discoverize CSS bundled with Bootstrap-CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <title>Ascension Holdings Group</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+
+    <title>Pipeline Properties</title>
   </head>
   <body>
     <header class="header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky" data-switch-class="shadow-none|shadow">
       <nav class="navbar navbar-light navbar-default">
         <div class="container-xl justify-content-start">
-          <a class="navbar-brand d-flex position-relative mb-1" href="#top"><img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Discoverize" /><img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Ascension Holdings Group, LLC" /></a>
+          <a class="navbar-brand d-flex position-relative mb-1" href="#top"><img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Discoverize" /><img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Pipeline Properties Logo" /></a>
 
-          <div class="ms-auto ps-6 navbar-end d-flex flex-row justify-content-end">
+          <div class="ms-auto navbar-end d-flex flex-row justify-content-end">
             <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button> -->
 
             <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +48,7 @@
 
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                <a class="nav-link active" href="#top" id="navbarHome" role="button">Home</a>
+                <a class="nav-link" href="#top" id="navbarHome" role="button">Home</a>
               </li>
 
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
@@ -50,7 +56,7 @@
                 <ul class="nav-dropdown-menu dropdown-menu">
                   <li><span class="dropdown-header text-uppercase fw-bold">Locations</span></li>
                   <li><a class="dropdown-item" target="_blank" href="san-antonio-listing-1.html">San Anonio, TX</a></li>
-                  <li><a class="dropdown-item" href="#">2nd Location</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="syracuse-listing-1.html">Syracuse, NY</a></li>
                 </ul>
               </li>
 
@@ -74,7 +80,7 @@
 
     <section id="searchbox-hero-1" class="section section__inverse justify-content-center pt-6 pb-4 pb-lg-5 pb-xl-6 vh-75 h-lg-640px min-h-330px">
       <div class="bg bg-img position-absolute" data-bg-img=".img">
-        <img src="http://assets.coolorize.com/homes/5-3/full/vidar-nordli-mathisen-pSImobuQc3A-unsplash--scaleddown.jpg" class="img" alt="Image" />
+        <img src="assets/img/main-image-san-antonio.jpg" class="img" alt="San Antonio Skyline" />
 
         <div class="overlay bg-dark position-absolute o-10"></div>
       </div>
@@ -85,7 +91,7 @@
           <div id="searchbox-hero-1Searchbox" class="searchbox col-12 col-lg-8 col-xl-7 py-4 my-5">
             <a class="form-options-backdrop modal-backdrop collapsed" data-bs-toggle="collapse" href="#searchbox-hero-1FormOptionsCollapse" role="button" aria-expanded="false" aria-controls="searchbox-hero-1FormOptionsCollapse"></a>
 
-            <h1 class="text-center text-white display-5 mb-4 pb-lg-2 position-relative">Rentals in San Antonio</h1>
+            <h1 class="text-center text-white display-5 mb-4 pb-lg-2 position-relative">Rent Out Your Home<br>Worry-Free</h1>
 
             <!-- /.searchbox-form position-relative mx-lg-auto bg-white rounded  -->
           </div>
@@ -158,7 +164,7 @@
       <div class="container-xl position-relative text-center">
 
         <p>
-          <a target="_blank" href="san-antonio-listing-1.html" class="btn btn-primary px-lg-5 rounded fw-bold me-3">Book Now</a>
+          <a target="_blank" href="san-antonio-listing-1.html" class="btn btn-success px-5 fw-bold">Book Now</a>
         </p>
       </div>
       <!-- /.swiper with-pagination -->
@@ -245,75 +251,56 @@
     </section>
     <!-- #faq-1.section py-5 py-lg-6 -->
 
-    <section id="callout-subscribe-1" class="section section__inverse py-5 py-lg-6 wrapper">
-      <div class="bg bg-img position-absolute bg-dark medium" data-bg-img=".img"></div>
-
-      <div class="container-xl position-relative">
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-6">
-            <header class="section-header mb-5">
-              <h2 class="fs-3 section-title mb-3">Contact Us</h2>
-            </header>
-           <!-- Contact -->
-        <!-- <article id="contact" class="wrapper style4">
-          <div class="container medium">
-            <header>
-              <h2>Have me make stuff for you.</h2>
-            </header> -->
-            <div class="row">
-              <div class="col-12">
-                <form name="contact" method="post" data-netlify="true">
-                  <div class="row">
-                    <div class="col-6 col-12-small">
-                      <input type="text" name="name" id="name" placeholder="Name" />
-                    </div>
-                    <div class="col-6 col-12-small">
-                      <input type="email" name="email" id="email" placeholder="Email" />
-                    </div>
-                    <div class="col-12">
-                      <input type="text" name="subject" id="subject" placeholder="Subject" />
-                    </div>
-                    <div class="col-12">
-                      <textarea name="message" id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <ul class="actions">
-                        <li><input type="submit" name = 'submit' value="Send Message" /></li>
-                        <li><input type="reset" value="Clear Form" class="alt" /></li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
-              </div>
+    <section id="subscribe-1" class="section py-5 py-lg-6">
+      <div class="bg bg-img position-absolute bg-secondary o-10" data-bg-img=".img"></div>
+      <!-- /.bg bg-img position-absolute -->
+        <div class="container-xl position-relative">
+          <div class="row gx-5">
+            <div class="col-12 col-lg-7 section-content pt-4 mt-4 mt-lg-5 mt-xl-6">
+             <header class="section-header mb-5">
+                <h2 class="fs-3 text-center section-title mb-3">Contact Us</h2>
+              </header>
+              <!-- /.section-header mb-4 visually-hidden -->
             </div>
-          <!-- </div>
-        </article> -->
-
-        
-
-            
-            <!-- /.section-header mb-5 -->
+            <!-- /.col-12 col-lg-7 section-content pt-4 mt-4 mt-lg-5 mt-xl-6 -->
           </div>
-          <!-- /.col-12 col-md-6 col-lg-6 -->
-<!-- 
-          <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
-            <form action="http://html.coolorize.com/discoverize/minimal/page-sell-1.html" method="post" class="w-100">
-              <div class="input-group">
-                <input type="text" class="form-control form-control-lg" placeholder="Email Address" />
-                <button class="btn btn-primary btn-default btn-lg px-4" type="button" id="button-addon2">Submit</button>
-              </div>
-            </form>
-          </div> -->
-          <!-- /.col-12 col-md-6 col-lg-6 -->
+          <div class="col-12 col-lg-5 section-content">
+            <div class="p-5 rounded">
+              <form action="#" class="mb-0">
+                <div class="mb-4">
+                  <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your name:</label> -->
+                  <input id="subscribeName" class="form-control" type="text" placeholder="Name" />
+                </div>
+                <div class="mb-4">
+                  <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your email address:</label> -->
+                  <input id="subscribeEmail" class="form-control" type="email" placeholder="Email" />
+                </div>
+                <div class="mb-4">
+                  <!-- <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label> -->
+                  <input id="subscribeSubject" class="form-control" type="text" placeholder="Subject" />
+                </div>
+                <div class="mb-4">
+                  <!-- <label for="subscribeMessage" class="form-label fw-bold">Enter your email address:</label> -->
+                  <textarea id="subscribeMessage" class="form-control" type="text" placeholder="Message"></textarea>
+                </div>
+
+                <div class="container-xl position-relative text-center">
+                  <button type="submit" class="btn btn-success px-5 fw-bold">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.bg-light p-5 rounded -->
+          </div>
+          <!-- /.col-12 col-lg-5 section-content -->
         </div>
         <!-- /.row -->
       </div>
-      <!-- /.container-xl -->
+      <!-- /.container-xl position-relative -->
     </section>
-    <!-- #callout-subscribe-1.section section__inverse py-5 py-lg-6 -->
+    <!-- #subscribe-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
     <footer class="">
-      <div id="footer-1" class="section py-5 py-lg-6">
+      <div id="footer-1" class="section p-5 py-lg-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
         <!-- /.bg bg-img position-absolute -->
 
@@ -321,14 +308,13 @@
           <div class="row gy-4 gx-4 section-content">
             <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
               <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
-                <a href="#"><img src="assets/img/logo-dark.png" alt="Ascension Holdings Group" /></a>
+                <a href="#"><img src="assets/img/logo-dark-footer.png" alt="Pipeline Properties" /></a>
               </p>
 
               <p class="mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">CONTACT INFO
-                <br>Address: Wind Path Street, San Antonio, TX, USA
-                <br>Phone: +1-111-111-1111
-                <br>Email: nikki@ascensionhg.com
-                <br>Web: AscensionHG.com</p>
+                <br>Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
+                <br>Email: inquire@ascensionhg.com
+                <br>Web: <a href="#">AscensionHG.com</a></p>
             </div>
             <!-- /.col-12 col-md-5 col-lg-4 pe-lg-5 -->
 
@@ -344,25 +330,8 @@
                   <li class="list-inline-item">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                   </li>
-
-                  <!-- <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li> -->
-
                   <li class="list-inline-item">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                  </li>
-
-                  <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                  </li>
-
-                  <!-- <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                  </li> -->
-
-                  <li class="list-inline-item">
-                    <a href="#"><i class="fas fa-envelope"></i></a>
                   </li>
                 </ul>
               </div>
@@ -383,7 +352,7 @@
         <div class="container-xl position-relative">
           <div class="row section-content">
             <div class="col-12 col-md-7 offset-md-5 col-lg-8 offset-lg-4 text-center text-md-start">
-              <p class="fs-sm mb-0">&copy; 2022 Ascension Holdings Group | Designed By Nika Hughes | All Rights Reserved</p>
+              <p class="fs-sm mb-0">&copy; 2022 Ascension Holdings | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
             </div>
             <!-- /.col-12 -->
           </div>
