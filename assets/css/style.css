@@ -357,6 +357,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+form textarea {
+		height: 15em;
+	}
 
 button,
 select {
@@ -1376,7 +1379,7 @@ body {
   }
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 41.666667%;
+    width: 70%;
   }
   .col-lg-6 {
     flex: 0 0 auto;
@@ -4645,6 +4648,7 @@ fieldset:disabled .btn {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .navbar-toggler {
@@ -5173,8 +5177,17 @@ fieldset:disabled .btn {
 
 .navbar-brand-img-light,
 .navbar-brand-img-dark {
+  max-width: 100% !important;
+  width: 230px !important;
+  height: auto !important;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+}
+
+.footer-brand-img {
+  max-width: 100% !important;
+  width: 230px !important;
+  height: auto !important;
 }
 
 .navbar-brand-img-light {
@@ -8934,6 +8947,10 @@ fieldset:disabled .btn {
   margin-top: -7.5rem !important;
   margin-bottom: -7.5rem !important;
 }
+.my-n8 {
+  margin-left: 7.5rem !important;
+  margin-right: 7.5rem !important;
+}
 
 .mt-n1 {
   margin-top: -0.25rem !important;
@@ -9068,6 +9085,14 @@ fieldset:disabled .btn {
 }
 
 .p-5 {
+  padding: 3rem !important;
+}
+.p-8 {
+  padding: 0 15% !important;
+}
+
+
+footer.p-5 {
   padding: 3rem !important;
 }
 

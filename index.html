@@ -32,8 +32,8 @@
   <body>
     <header class="header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky" data-switch-class="shadow-none|shadow">
       <nav class="navbar navbar-light navbar-default">
-        <div class="container-xl justify-content-start">
-          <a class="navbar-brand d-flex position-relative mb-1" href="#top"><img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Discoverize" /><img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Pipeline Properties Logo" /></a>
+        <div class="container-xl justify-content-start my-n8">
+          <a class="navbar-brand d-flex position-relative mb-1" href="#top"><img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Pipeline Properties Logo" /><img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Pipeline Properties Logo" /></a>
 
           <div class="ms-auto navbar-end d-flex flex-row justify-content-end">
             <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button> -->
@@ -46,7 +46,7 @@
           <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="mt-4 d-lg-none"></div>
 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-0 mb-2 ">
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
                 <a class="nav-link" href="#top" id="navbarHome" role="button">Home</a>
               </li>
@@ -65,7 +65,7 @@
               </li>
 
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                <a class="nav-link" href="#callout-subscribe-1" id="navbarDocs" role="button">Contact</a>
+                <a class="nav-link" href="#subscribe-1" id="navbarDocs" role="button">Contact</a>
               </li>
             </ul>
             <!-- /.navbar-nav -->
@@ -250,44 +250,41 @@
       <!-- /.container-xl position-relative -->
     </section>
     <!-- #faq-1.section py-5 py-lg-6 -->
+    
 
     <section id="subscribe-1" class="section py-5 py-lg-6">
       <div class="bg bg-img position-absolute bg-secondary o-10" data-bg-img=".img"></div>
       <!-- /.bg bg-img position-absolute -->
         <div class="container-xl position-relative">
-          <div class="row gx-5">
-            <div class="col-12 col-lg-7 section-content pt-4 mt-4 mt-lg-5 mt-xl-6">
-             <header class="section-header mb-5">
-                <h2 class="fs-3 text-center section-title mb-3">Contact Us</h2>
-              </header>
-              <!-- /.section-header mb-4 visually-hidden -->
-            </div>
-            <!-- /.col-12 col-lg-7 section-content pt-4 mt-4 mt-lg-5 mt-xl-6 -->
-          </div>
-          <div class="col-12 col-lg-5 section-content">
-            <div class="p-5 rounded">
-              <form action="#" class="mb-0">
-                <div class="mb-4">
-                  <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your name:</label> -->
-                  <input id="subscribeName" class="form-control" type="text" placeholder="Name" />
-                </div>
-                <div class="mb-4">
-                  <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your email address:</label> -->
-                  <input id="subscribeEmail" class="form-control" type="email" placeholder="Email" />
-                </div>
-                <div class="mb-4">
-                  <!-- <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label> -->
-                  <input id="subscribeSubject" class="form-control" type="text" placeholder="Subject" />
-                </div>
-                <div class="mb-4">
-                  <!-- <label for="subscribeMessage" class="form-label fw-bold">Enter your email address:</label> -->
-                  <textarea id="subscribeMessage" class="form-control" type="text" placeholder="Message"></textarea>
-                </div>
-
-                <div class="container-xl position-relative text-center">
-                  <button type="submit" class="btn btn-success px-5 fw-bold">Submit</button>
-                </div>
-              </form>
+          <header class="section-header mb-5">
+            <h2 class="fs-3 text-center section-title mb-3">Contact Us</h2>
+          </header>
+          <!-- /.section-header mb-4 visually-hidden -->
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 section-content">
+              <div class="p-8 rounded">
+                <form action="#" class="mb-0">
+                  <div class="mb-4">
+                    <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your name:</label> -->
+                    <input id="subscribeName" class="form-control" type="text" placeholder="Name" />
+                  </div>
+                  <div class="mb-4">
+                    <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your email address:</label> -->
+                    <input id="subscribeEmail" class="form-control" type="email" placeholder="Email" />
+                  </div>
+                  <div class="mb-4">
+                    <!-- <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label> -->
+                    <input id="subscribeSubject" class="form-control" type="text" placeholder="Subject" />
+                  </div>
+                  <div class="mb-4">
+                    <!-- <label for="subscribeMessage" class="form-label fw-bold">Enter your email address:</label> -->
+                    <textarea id="subscribeMessage" class="form-control" type="text" placeholder="Message"></textarea>
+                  </div>
+                  <div class="container-xl position-relative text-center">
+                    <button type="submit" class="btn btn-success px-5 fw-bold">Submit</button>
+                  </div>
+                </form>
+              </div>
             </div>
             <!-- /.bg-light p-5 rounded -->
           </div>
@@ -300,7 +297,7 @@
     <!-- #subscribe-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
 
     <footer class="">
-      <div id="footer-1" class="section p-5 py-lg-6">
+      <div id="footer-1" class="section my-n8 py-lg-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
         <!-- /.bg bg-img position-absolute -->
 
@@ -308,13 +305,12 @@
           <div class="row gy-4 gx-4 section-content">
             <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
               <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
-                <a href="#"><img src="assets/img/logo-dark-footer.png" alt="Pipeline Properties" /></a>
+                <a href="#top"><img src="assets/img/logo-dark-footer.png" class='footer-brand-img 'alt="Pipeline Properties" /></a>
               </p>
 
-              <p class="mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">CONTACT INFO
+              <p class="mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
                 <br>Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
-                <br>Email: inquire@ascensionhg.com
-                <br>Web: <a href="#">AscensionHG.com</a></p>
+                <br>Email: inquire@ascensionhg.com</p>
             </div>
             <!-- /.col-12 col-md-5 col-lg-4 pe-lg-5 -->
 
@@ -352,7 +348,7 @@
         <div class="container-xl position-relative">
           <div class="row section-content">
             <div class="col-12 col-md-7 offset-md-5 col-lg-8 offset-lg-4 text-center text-md-start">
-              <p class="fs-sm mb-0">&copy; 2022 Ascension Holdings | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
+              <p class="fs-sm mb-0">&copy; 2022 Pipeline Properties | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
             </div>
             <!-- /.col-12 -->
           </div>
