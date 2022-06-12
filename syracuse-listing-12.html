@@ -38,23 +38,15 @@
     <title>Syracuse</title>
   </head>
   <body>
-    <header class="header position-absolute" data-spy="scroll" data-scroll="sticky" data-switch-class="shadow-none|shadow">
+    <header class="header is-sticky-inverse" data-spy="scroll" data-scroll="sticky" data-sticky-hide="true">
       <nav class="navbar navbar-light navbar-default">
         <div class="container-xl justify-content-start">
-          <a class="navbar-brand d-flex position-relative mb-1" href="index.html">
-            <img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Crew Nest Logo" />
-            <img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Crew Nest Logo" /></a>
-          <div class="ms-auto navbar-end d-flex flex-row justify-content-end">
-            <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button> -->
-
-            <button class="btn-close btn-close-menu collapsed ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="btn-close-icon"></span>
-            </button>
-          </div>
+          <a class="navbar-brand d-flex position-relative mb-1" href="index.html"><img src="assets/img/logo-light-header.png" class="navbar-brand-img-dark" alt="Crew Nest" /><img src="assets/img/logo-dark-footer.png" class="navbar-brand-img-light" alt="Crew Nest Group" /></a>
 
           <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="mt-4 d-lg-none"></div>
-            <ul class="navbar-nav me-0 mb-2 ">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
                 <a class="nav-link" href="index.html" id="navbarHome" role="button">Home</a>
               </li>
@@ -63,7 +55,7 @@
                 <a class="nav-link" href="#" id="navbarListing" role="button" data-bs-toggle="dropdown">Book</a>
                 <ul class="nav-dropdown-menu dropdown-menu">
                   <li><span class="dropdown-header text-uppercase fw-bold">Locations</span></li>
-                  <li><a class="dropdown-item" target="_blank" href="san-antonio-listing-1.html">San Anonio, TX</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="san-antonio-listing-1.html">San Antonio, TX</a></li>
                   <li><a class="dropdown-item" target="_blank" href="syracuse-listing-1.html">Syracuse, NY</a></li>
                 </ul>
               </li>
@@ -73,7 +65,7 @@
               </li>
 
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
-                <a class="nav-link" href="index.html#subscribe-1" id="navbarDocs" role="button">Contact</a>
+                <a class="nav-link" href="index.html#callout-subscribe-1" id="navbarDocs" role="button">Contact</a>
               </li>
             </ul>
             <!-- /.navbar-nav -->
@@ -81,6 +73,7 @@
           <!-- /.collapse navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
+    
       </nav>
 
       <div class="bg header-bg position-absolute trans-base"></div>
@@ -95,7 +88,7 @@
       </header>
       <!-- /.section-header mb-5 visually-hidden -->
 
-      <!-- <div class="container-xl position-relative section-content">
+      <div class="container-xl position-relative section-content">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html" class="o-50 o-100-hover trans-base fs-sm fw-bold">Home</a></li>
@@ -103,12 +96,12 @@
             <li class="breadcrumb-item"><a href="san-antonio-listing-1.html" class="o-50 o-100-hover trans-base fs-sm fw-bold">San Antonio, TX</a></li>
           </ol>
         </nav>
-      </div> -->
+      </div>
       <!-- /.container-xl position-relative py-3 -->
     </section>
     <!-- #breadcrumb.section section__inverse py-2 -->
 
-    <section id="listing-detail-header-1" class="section shadow-none trans-base is-sticky-inverse py-55" data-spy="scroll" data-scroll="sticky" data-switch-class="py-55|py-2||shadow-none|shadow">
+    <section id="listing-detail-header-1" class="section shadow-none trans-base is-sticky-inverse py-5" data-spy="scroll" data-scroll="sticky" data-switch-class="py-5|py-3||shadow-none|shadow">
       <div class="bg bg-img position-absolute bg-white" data-bg-img=".img"></div>
       <!-- /.bg bg-img position-absolute bg-white -->
 
@@ -120,19 +113,19 @@
 
         <div class="row gy-2">
           <div class="col-12 col-md order-md-2 text-md-end d-flex flex-column justify-content-center">
-            <p class="card-text fs-3 fw-bold">$109 per night</p>
+            <p class="card-text fs-3 fw-bold">$150 per night</p>
           </div>
           <!-- /.col-12 -->
 
           <div class="col-12 col-md-auto order-md-1 d-flex flex-column justify-content-center">
-            <p class="card-text mb-0 text-truncate"><strong><i class="fa-solid fa-location-dot"></i>   Wind Path</strong>, San Antonio, TX 78239</p>
+            <p class="card-text mb-0 text-truncate"><strong><i class="fa-solid fa-location-dot"></i>   Wind Path Street</strong>, San Antonio, TX 11111</p>
 
             <p class="card-text row gx-0 gx-md-0 mt-1 text-truncate d-block">
-              <span class="col-auto"><i class="fa-solid fa-user pe-1"></i>6</span>
+              <span class="col-auto"><i class="fa-solid fa-user"></i> 4</span>
               <span class="col-auto px-0 o-50"></span>
-              <span class="col-auto"><i class="fa-solid fa-bed pe-2 ps-4"></i>3</span>
+              <span class="col-auto"><i class="fa-solid fa-bed"></i> 2</span>
               <span class="col-auto px-0 o-50"></span>
-              <span class="col-auto"><i class="fa-solid fa-bath pe-2 ps-4"></i>2.5</span>
+              <span class="col-auto"><i class="fa-solid fa-bath"></i> 2</span>
             </p>
           </div>
         </div>
@@ -255,16 +248,17 @@
           <div class="col-12 col-lg-9">
             <div class="mb-5 me-lg-3">
               <h3 class="mb-4 fs-5">About</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perferendis accusamus voluptate explicabo ut, natus porro cupiditate alias delectus minus dignissimos ullam odio! Consectetur corrupti sit minus, quasi dolor beatae.
-              </p>
-            </div>
 
+              <p>Wind Path Wander, a true Texas-style house, is located in the lorem ipsum, dolor sit amet consectetur adipisicing, elit. Vero facilis praesentium repellendus impedit nam molestias sequi nobis ea, quis, eaque illum doloribus beatae vel. Accusantium eius vero adipisci sit, eveniet amet consectetur adipisicing elit. Distinctio libero sunt suscipit enim quod esse ipsam nisi atque et, aut aliquam maxime nam adipisci impedit ipsum beatae, culpa error iusto.</p>
+            </div>
             <!-- /.mb-5 me-lg-3 -->
             
             <div class="sticky-top pt-6 mt-n6 mb-4 zi-1">
+              
               <div class="container-xl position-relative text-center">
+
                 <p>
-                  <a target="_blank" href="#" class="btn btn-success px-5 fw-bold">Book</a>
+                  <a href="#" class="btn btn-primary px-lg-5 rounded fw-bold me-3">Book Now</a>
                 </p>
               </div>
             </div>
@@ -273,25 +267,19 @@
               <h3 class="mb-4 fs-5">Amenities</h3>
 
               <div class="row g-2 mb-3">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> 3 Bedrooms</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> 2 Bedrooms</div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> 2.5 baths</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> 2 Full baths</div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> 2350 sq ft</div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Office</div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Loft</div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Kitchen - dishwasher, microwave, coffee maker, small kitchen appliances</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Kitchen - dishwasher, microwave, coffee maker</div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Bed linens and towels</div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Smart TVs</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> TV</div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Wi-Fi</div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Central Air</div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Air Conditioning</div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3"><i class="fas fa-check text-warning"></i> Washing Machine/Dryer</div>
 
@@ -302,77 +290,44 @@
             <div class="mb-5 me-lg-3">
               <h3 class="mb-4 fs-5">What's Nearby</h3>
 
+              <h6 class="mb-3">Restaurants</h6>
+
               <div class="counter mb-3">
-                
                 <div class="mb-2 pb-1 d-flex flex-row">
                   <div class="counter-number"></div>
+
                   <div class="row w-100">
                     <dl class="col-12 col-md mb-1 mb-md-0">
-                      <dt class="text-truncate"><a target="_blank" href="https://goo.gl/maps/bXLzyWjC2aC2E68C7">Randolph Air Force Base</a></dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Military base</dd>
+                      <dt class="text-truncate"><a href="#">Poke Bros</a></dt>
+                      <dd class="text-secondary fs-sm mb-0 text-truncate">Hawaian</dd>
                     </dl>
 
                     <dl class="col-4 col-md-2 mb-0">
-                      <dt class="fw-normal text-truncate">6.4 mi</dt>
+                      <dt class="fw-normal text-truncate">0.3 mi</dt>
                       <dd class="text-secondary fs-sm mb-0 text-truncate">Distance</dd>
                     </dl>
+
                   </div>
+                  <!-- /.row -->
                 </div>
-                
-                <div class="mb-2 pb-1 d-flex flex-row">
-                  <div class="counter-number"></div>
-                  <div class="row w-100">
-                    <dl class="col-12 col-md mb-1 mb-md-0">
-                      <dt class="text-truncate"><a target="_blank" href="https://goo.gl/maps/WRjXT9bVJhgcLjBo7">Fort Sam Houston</a></dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Military base</dd>
-                    </dl>
-                    <dl class="col-4 col-md-2 mb-0">
-                      <dt class="fw-normal text-truncate">9.4 mi</dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Distance</dd>
-                    </dl>
-                  </div>
-                </div>
+                <!-- /.mb-2 pb-1 d-flex flex-row -->
 
                 <div class="mb-2 pb-1 d-flex flex-row">
                   <div class="counter-number"></div>
-                  <div class="row w-100">
-                    <dl class="col-12 col-md mb-1 mb-md-0">
-                      <dt class="text-truncate"><a target="_blank" href="https://goo.gl/maps/u1ehiknDpGymL8dW9">San Antonio River Walk</a></dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Iconic area with landscaped walkways, bridges, restaurants, bars, hotels, shops & boat tours.</dd>
-                    </dl>
-                    <dl class="col-4 col-md-2 mb-0">
-                      <dt class="fw-normal text-truncate">12.9 mi</dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Distance</dd>
-                    </dl>
-                  </div>
-                </div>
 
-                <div class="mb-2 pb-1 d-flex flex-row">
-                  <div class="counter-number"></div>
                   <div class="row w-100">
                     <dl class="col-12 col-md mb-1 mb-md-0">
-                      <dt class="text-truncate"><a target="_blank" href="https://g.page/OfficialAlamo?share">The Alamo</a></dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Small, shrinelike fortress & monument to Texas history with a museum, artifacts, gardens & more.</dd>
+                      <dt class="text-truncate"><a href="#">Red Lobster</a></dt>
+                      <dd class="text-secondary fs-sm mb-0 text-truncate">Seafood</dd>
                     </dl>
-                    <dl class="col-4 col-md-2 mb-0">
-                      <dt class="fw-normal text-truncate">12.6 mi</dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Distance</dd>
-                    </dl>
-                  </div>
-                </div>
 
-                <div class="mb-2 pb-1 d-flex flex-row">
-                  <div class="counter-number"></div>
-                  <div class="row w-100">
-                    <dl class="col-12 col-md mb-1 mb-md-0">
-                      <dt class="text-truncate"><a target="_blank" href="https://goo.gl/maps/JkZca7NfUhv3SeNeA">Northeast Methodist Hospital</a></dt>
-                      <dd class="text-secondary fs-sm mb-0 text-truncate">Medical facility</dd>
-                    </dl>
                     <dl class="col-4 col-md-2 mb-0">
-                      <dt class="fw-normal text-truncate">3.9 mi</dt>
+                      <dt class="fw-normal text-truncate">0.25 mi</dt>
                       <dd class="text-secondary fs-sm mb-0 text-truncate">Distance</dd>
                     </dl>
+
                   </div>
+                  <!-- /.row -->
                 </div>
                 <!-- /.mb-2 pb-1 d-flex flex-row -->
               </div>
@@ -393,19 +348,21 @@
 
 
     <footer class="">
-      <div id="footer-1" class="section py-lg-6">
+      <div id="footer-1" class="section py-5 py-lg-6">
         <div class="bg bg-img position-absolute" data-bg-img=".img"></div>
         <!-- /.bg bg-img position-absolute -->
 
         <div class="container-xl position-relative">
           <div class="row gy-4 gx-4 section-content">
             <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
-              <p class="mb-3 w-md-25 w-lg-100">
-                <a href="index.html"><img src="assets/img/logo-dark-footer.png" class='footer-brand-img' alt="Crew Nest"></a>
+              <p class="mb-3 w-sm-50 w-md-25 w-lg-100">
+                <a href="#"><img src="assets/img/logo-dark-footer.png" alt="Crew Nest" /></a>
               </p>
 
-              <p class="mb-1 w-md-75 w-lg-100 ps-sm-5 ps-lg-0">Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
-                <br>Email: inquire@ascensionhg.com</p>
+              <p class="mb-1 w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">CONTACT INFO
+                <br>Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
+                <br>Email: inquire@ascensionhg.com
+                <br>Web: <a href="#">crewnest.com</a></p>
             </div>
             <!-- /.col-12 col-md-5 col-lg-4 pe-lg-5 -->
 
@@ -415,15 +372,32 @@
               <!-- /.d-flex -->
 
               <div class="d-flex flex-column flex-sm-row flex-lg-column">
-                <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-30 w-lg-100">Follow Us</h6>
+                <h6 class="mt-1 mb-3 text-uppercase fw-bold w-sm-50 w-md-25 w-lg-100">Follow Us</h6>
 
-                <ul class="list-inline w-sm-50 w-md-70 w-lg-100 ps-sm-4 ps-lg-0">
+                <ul class="list-inline w-sm-50 w-md-75 w-lg-100 ps-sm-2 ps-lg-0">
                   <li class="list-inline-item">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                   </li>
+
+                  <!-- <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li> -->
+
                   <li class="list-inline-item">
-                    <a target="_blank" href="https://www.instagram.com/staycrewnest/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                   </li>
+
+                  <!-- <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li> -->
+
+                  <!-- <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                  </li> -->
+
+                  <!-- <li class="list-inline-item">
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </li> -->
                 </ul>
               </div>
               <!-- /.d-flex -->
@@ -442,7 +416,7 @@
 
         <div class="container-xl position-relative">
           <div class="row section-content">
-            <div class="col-12 col-md-7 col-lg-8 text-center text-md-center">
+            <div class="col-12 col-md-7 offset-md-5 col-lg-8 offset-lg-4 text-center text-md-start">
               <p class="fs-sm mb-0">&copy; 2022 Crew Nest | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
             </div>
             <!-- /.col-12 -->
@@ -487,7 +461,7 @@
               <p class="mb-1">
                 <a href="#" class="text-decoration-underline" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#userForgotModal">Forgot Password</a>
               </p>
-              <p class="mb-0">New to Discoverize <a href="#" class="text-decoration-underline" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#userSignupModal">Create an account</a></p>
+              <p class="mb-0">New to Crew Nest <a href="#" class="text-decoration-underline" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#userSignupModal">Create an account</a></p>
             </div>
             <!-- /.text-center -->
           </div>
@@ -568,7 +542,7 @@
             <form action="http://html.coolorize.com/discoverize/minimal/#" method="post">
               <h6 class="mb-4">Forgot password?</h6>
 
-              <p>Enter your details below to request an <span class="text-primary">Discoverize</span> account password reset.</p>
+              <p>Enter your details below to request an <span class="text-primary">Crew Nest</span> account password reset.</p>
 
               <div class="mb-3">
                 <label for="userForgotEmail" class="form-label fs-sm fw-bold">Email</label>

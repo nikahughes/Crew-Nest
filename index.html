@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Netlify Identity Widget for CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/538d9daa14.js" crossorigin="anonymous"></script>
 
@@ -27,14 +30,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
 
-    <title>Pipeline Properties</title>
+    <title>Crew Nest</title>
   </head>
   <body>
-    <header class="header is-sticky-inverse is-sticky-bg-o-0 position-absolute" data-spy="scroll" data-scroll="sticky" data-switch-class="shadow-none|shadow">
+    <header class="header position-absolute" data-spy="scroll" data-scroll="sticky" data-switch-class="shadow-none|shadow">
       <nav class="navbar navbar-light navbar-default">
         <div class="container-xl justify-content-start">
-          <a class="navbar-brand d-flex position-relative mb-1" href="#top"><img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Pipeline Properties Logo" /><img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Pipeline Properties Logo" /></a>
-
+          <a class="navbar-brand d-flex position-relative mb-1" href="#top">
+            <img src="assets/img/logo-light.png" class="navbar-brand-img-dark" alt="Crew Nest Logo" />
+            <img src="assets/img/logo-dark.png" class="navbar-brand-img-light" alt="Crew Nest Logo" /></a>
           <div class="ms-auto navbar-end d-flex flex-row justify-content-end">
             <!-- <button class="btn btn-link p-0 ms-3 shadow-none" data-bs-toggle="modal" data-bs-target="#userSignInModal"><i class="fas fa-user"></i></button> -->
 
@@ -45,7 +49,6 @@
 
           <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="mt-4 d-lg-none"></div>
-
             <ul class="navbar-nav me-0 mb-2 ">
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
                 <a class="nav-link" href="#top" id="navbarHome" role="button">Home</a>
@@ -61,7 +64,7 @@
               </li>
 
               <li class="nav-item nav-dropdown dropdown dropdown-hover dropdown__mega">
-                <a class="nav-link" href="#faq-1" role="button">FAQ</a>
+                <a class="nav-link" href="index.html#faq-1" role="button">FAQ</a>
               </li>
 
               <li class="nav-item nav-dropdown dropdown dropdown-hover">
@@ -156,7 +159,7 @@
       </div>
       <div class="container-xl position-relative">
         <header class="section-header mb-5">
-          <p class="lead text-center mb-0 o-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis natus laborum vel ab labore quae aperiam libero voluptatem eligendi asperiores commodi ad voluptatum quaerat amet, rerum totam iste doloribus fugit!</p>
+          <p class="lead text-center mb-0 o-75">This young San Antonio home is centrally located midway between Ft Sam Houston and Randolph AFB. It is less than 20 minutes to the Riverwalk and downtown amenities! </p>
         </header>
       
       </div>  
@@ -187,12 +190,13 @@
             <div class="accordion mb-4" id="accordionselltousFAQ">
               <div class="accordion-item bg-transparent">
                 <h2 class="accordion-header border-bottom" id="accordionfaq-1Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-1Collapse" aria-expanded="false" aria-controls="accordionfaq-1Collapse">Question about property?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-1Collapse" aria-expanded="false" aria-controls="accordionfaq-1Collapse">Why book with us direct?</button>
                 </h2>
 
                 <div id="accordionfaq-1Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-1Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>As crew members, we understand the dynamics of school tours, travel vouchers, and the challenges of finding suitable mid-term housing within the allowable rate. By booking a Crew Nest, you’re skipping the hassle and added, unreimbursable fees many big platforms charge guests. You’ll save money and have less headache by working with us directly!
+                    </p>
                   </div>
                 </div>
                 <!-- /#accordionfaq-1Collapse.accordion-collapse collapse  -->
@@ -201,12 +205,13 @@
 
               <div class="accordion-item bg-transparent">
                 <h2 class="accordion-header border-bottom" id="accordionfaq-2Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-2Collapse" aria-expanded="false" aria-controls="accordionfaq-2Collapse">Question about property?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-2Collapse" aria-expanded="false" aria-controls="accordionfaq-2Collapse">Are there additional fees?</button>
                 </h2>
 
                 <div id="accordionfaq-2Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-2Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>There is a reservation fee equal to $500 due within 72 hours of securing your room. This is not a security deposit; it is applied toward your stay.
+                      <br>Guests in TDY status are not charged a security deposit, however, their card information is stored for any damages beyond normal wear and tear assessed at checkout. </p>
                   </div>
                 </div>
                 <!-- /#accordionfaq-2Collapse.accordion-collapse collapse  -->
@@ -215,12 +220,15 @@
 
               <div class="accordion-item bg-transparent">
                 <h2 class="accordion-header border-bottom" id="accordionfaq-3Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-3Collapse" aria-expanded="false" aria-controls="accordionfaq-3Collapse">Question about property?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-3Collapse" aria-expanded="false" aria-controls="accordionfaq-3Collapse">What is the cancellation policy?</button>
                 </h2>
 
                 <div id="accordionfaq-3Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-3Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>For any changes or cancellations made less than 14 days in advance, you will only be refunded 50% of your reservation fee. Any notice less than 14 days forfeits the reservation fee.
+                      <br>
+                      <br>We understand that sometimes plans change and you may end up leaving earlier than expected. In the event you need to check out sooner than expected, we request the same 14 day notice to check-out without incurring any additional costs. If we are given less than 72 hour notice of an early departure, you will be responsible for full room charges for 72 hours.
+                    </p>
                   </div>
                 </div>
                 <!-- /#accordionfaq-3Collapse.accordion-collapse collapse  -->
@@ -229,16 +237,72 @@
 
               <div class="accordion-item bg-transparent">
                 <h2 class="accordion-header border-bottom" id="accordionfaq-4Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-4Collapse" aria-expanded="false" aria-controls="accordionfaq-4Collapse">Question about property?</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-4Collapse" aria-expanded="false" aria-controls="accordionfaq-4Collapse">Is there a minimum night stay?</button>
                 </h2>
 
                 <div id="accordionfaq-4Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-4Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Yes, our minimum is currently 28 days. If you are interested but do not quite meet the 28 day requirement, please contact our team. There may be gaps in reservations that can accommodate your specific circumstance.</p>
                   </div>
                 </div>
                 <!-- /#accordionfaq-4Collapse.accordion-collapse collapse  -->
               </div>
+
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header border-bottom" id="accordionfaq-5Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-5Collapse" aria-expanded="false" aria-controls="accordionfaq-5Collapse">Check-In and Check-Out Times</button>
+                </h2>
+
+                <div id="accordionfaq-5Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-5Heading" data-bs-parent="#accordionselltousFAQ">
+                  <div class="accordion-body">
+                    <p>Check-in is <u>4pm</u>.
+                      <br>Check-out is <u>11am</u>.
+                      <br>Late check outs must be requested the day prior and are not guaranteed. 
+                      <br>If you do not check out on time without prior coordination, you may be assessed a late check-out fee of $50. 
+                      <br>Any guest remaining on premises after <u>2pm</u> without late check-out approval will be charged for an additional night.
+                    </p>
+                  </div>
+                </div>
+                <!-- /#accordionfaq-3Collapse.accordion-collapse collapse  -->
+              </div>
+
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header border-bottom" id="accordionfaq-3Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-6Collapse" aria-expanded="false" aria-controls="accordionfaq-6Collapse">How do I check in?</button>
+                </h2>
+
+                <div id="accordionfaq-6Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-6Heading" data-bs-parent="#accordionselltousFAQ">
+                  <div class="accordion-body">
+                    <p>72 hours prior to your arrival, you will receive a digital copy of our welcome guide which includes directions and codes to access the front door and the door to your respective room.</p>
+                  </div>
+                </div>
+                <!-- /#accordionfaq-3Collapse.accordion-collapse collapse  -->
+              </div>
+
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header border-bottom" id="accordionfaq-7Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionfaq-7Collapse" aria-expanded="false" aria-controls="accordionfaq-7Collapse">What are the house rules?</button>
+                </h2>
+
+                <div id="accordionfaq-7Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-7Heading" data-bs-parent="#accordionselltousFAQ">
+                  <div class="accordion-body">
+                    <p>Our house rules focus around respect for the home and your co-habitants. A full listing of house rules are provided in the rental contract you will receive after reservation. The rules must be reviewed, signed and returned with your reservation fee.
+                      <br>
+                      <br>This is a summary of rules that are covered more in depth in the rental agreement:
+                      <br>- No parties. 
+                      <br>- No pets.
+                      <br>- No smoking.
+                      <br>- Quiet hours are between <u>10p - 8a</u>. 
+                      <br>- Terms of home gym use.
+                      <br>- Common area use.
+                      <br>- Damages.
+                      <br>
+                      <br>Please contact us if you’re interested in reviewing full terms prior to reservation inquiry.</p>
+                  </div>
+                </div>
+                <!-- /#accordionfaq-3Collapse.accordion-collapse collapse  -->
+              </div>
+
               <!-- /.accordion-item  bg-transparent -->
             </div>
             <!-- /.accordion  mb-4" id="accordionselltousFAQ -->
@@ -305,7 +369,7 @@
           <div class="row gy-4 gx-4 section-content">
             <div class="col-12 col-lg-3 col-xl-4 pe-lg-4 pe-xl-5 d-flex flex-column flex-sm-row flex-lg-column">
               <p class="mb-3 w-md-25 w-lg-100">
-                <a href="#top"><img src="assets/img/logo-dark-footer.png" class='footer-brand-img' alt="Pipeline Properties"></a>
+                <a href="#top"><img src="assets/img/logo-dark-footer.png" class='footer-brand-img' alt="Crew Nest"></a>
               </p>
 
               <p class="mb-1 w-md-75 w-lg-100 ps-sm-5 ps-lg-0">Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
@@ -326,7 +390,7 @@
                     <a href="#"><i class="fab fa-facebook"></i></a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/staycrewnest/"><i class="fab fa-instagram"></i></a>
                   </li>
                 </ul>
               </div>
@@ -347,7 +411,7 @@
         <div class="container-xl position-relative">
           <div class="row section-content">
             <div class="col-12 col-md-7 col-lg-8 text-center text-md-center">
-              <p class="fs-sm mb-0">&copy; 2022 Pipeline Properties | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
+              <p class="fs-sm mb-0">&copy; 2022 Crew Nest | Built by <a href="https://www.nikahughes.com/">Nika Hughes</a> | All Rights Reserved</p>
             </div>
             <!-- /.col-12 -->
           </div>
@@ -504,5 +568,18 @@
 
     <!-- Discoverize JS -->
     <script src="assets/js/discoverize.js"></script>
+
+    <!-- Netlify Identity widget login completion -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

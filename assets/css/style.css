@@ -5206,10 +5206,11 @@ fieldset:disabled .btn {
 .navbar-brand-img-light,
 .navbar-brand-img-dark {
   max-width: 100% !important;
-  width: 230px !important;
+  width: 150px !important;
   height: auto !important;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  margin-top: 18px;
 }
 
 .footer-brand-img {
@@ -9199,6 +9200,11 @@ footer.p-5 {
 
 .py-5 {
   padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.py-55 {
+  padding-top: 6rem !important;
   padding-bottom: 3rem !important;
 }
 
