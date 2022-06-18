@@ -59,7 +59,7 @@
                 <ul class="nav-dropdown-menu dropdown-menu">
                   <li><span class="dropdown-header text-uppercase fw-bold">Locations</span></li>
                   <li><a class="dropdown-item" target="_blank" href="san-antonio-listing-1.html">San Anonio, TX</a></li>
-                  <li><a class="dropdown-item" target="_blank" href="syracuse-listing-1.html">Syracuse, NY</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="#">Syracuse, NY&nbsp;<i>coming soon</i></a></li>
                 </ul>
               </li>
 
@@ -159,7 +159,7 @@
       </div>
       <div class="container-xl position-relative">
         <header class="section-header mb-5">
-          <p class="lead text-center mb-0 o-75">This young San Antonio home is centrally located midway between Ft Sam Houston and Randolph AFB. It is less than 20 minutes to the Riverwalk and downtown amenities! </p>
+          <p class="lead text-center mb-0 o-75">The Crew Nest at Windcrest is centrally located midway between Ft Sam Houston and Randolph AFB. It is less than 20 minutes to the Riverwalk and downtown amenities! </p>
         </header>
       
       </div>  
@@ -211,6 +211,7 @@
                 <div id="accordionfaq-2Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-2Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
                     <p>There is a reservation fee equal to $500 due within 72 hours of securing your room. This is not a security deposit; it is applied toward your stay.
+                      <br>
                       <br>Guests in TDY status are not charged a security deposit, however, their card information is stored for any damages beyond normal wear and tear assessed at checkout. </p>
                   </div>
                 </div>
@@ -225,7 +226,9 @@
 
                 <div id="accordionfaq-3Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-3Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
-                    <p>For any changes or cancellations made less than 14 days in advance, you will only be refunded 50% of your reservation fee. Any notice less than 14 days forfeits the reservation fee.
+                    <p>For any changes or cancellations made less than 14 days in advance, you will only be refunded 50% of your reservation fee. 
+                      <br>
+                      <br>Any notice less than 14 days forfeits the reservation fee.
                       <br>
                       <br>We understand that sometimes plans change and you may end up leaving earlier than expected. In the event you need to check out sooner than expected, we request the same 14 day notice to check-out without incurring any additional costs. If we are given less than 72 hour notice of an early departure, you will be responsible for full room charges for 72 hours.
                     </p>
@@ -256,9 +259,13 @@
                 <div id="accordionfaq-5Collapse" class="accordion-collapse collapse" aria-labelledby="accordionfaq-5Heading" data-bs-parent="#accordionselltousFAQ">
                   <div class="accordion-body">
                     <p>Check-in is <u>4pm</u>.
+                      <br>
                       <br>Check-out is <u>11am</u>.
+                      <br>
                       <br>Late check outs must be requested the day prior and are not guaranteed. 
+                      <br>
                       <br>If you do not check out on time without prior coordination, you may be assessed a late check-out fee of $50. 
+                      <br>
                       <br>Any guest remaining on premises after <u>2pm</u> without late check-out approval will be charged for an additional night.
                     </p>
                   </div>
@@ -327,25 +334,57 @@
           <div class="row justify-content-center">
             <div class="col-12 col-lg-5 section-content">
               <div class="p-8 rounded">
-                <form action="#" class="mb-0" name="contact" method="POST" data-netlify="true">
+              
+                <form class="mb-0" name="Contact Us" method="post" data-netlify="true">
                   <div class="mb-4">
-                    <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your name:</label> -->
-                    <input id="subscribeName" class="form-control" type="text" placeholder="Name" />
+                    <label for="subscribeEmail" class="form-label fw-bold">Name:</label>
+                    <input id="subscribeName" name="name" class="form-control" type="text" placeholder="" />
                   </div>
                   <div class="mb-4">
-                    <!-- <label for="subscribeEmail" class="form-label fw-bold">Enter your email address:</label> -->
-                    <input id="subscribeEmail" class="form-control" type="email" placeholder="Email" />
+                    <label for="subscribeEmail" class="form-label fw-bold">Email:</label>
+                    <input id="subscribeEmail" name="email" class="form-control" type="email" placeholder="" />
+                  </div>
+                  <!-- <div class="mb-4">
+                    <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label>
+                    <input id="subscribeSubject" name="subject" class="form-control" type="text" placeholder="Subject" />
+                  </div> -->
+                  <fieldset class="mb-4">
+                    <label for="subscribeEmail" class="form-label fw-bold">Reason for Visit?</label>
+                    <!-- <legend>Reason for Visit?</legend> -->
+
+                    <div class="">
+                      <input id="RIQ/RFC" name="RIQ/RFC" class="" type="checkbox">
+                      <label for="RIQ/RFC">RIQ/RFC</label>
+                    </div>
+                    <div class="">
+                      <input id="BSOC" name="BSOC" class="" type="checkbox">
+                      <label for="BSOC">BSOC</label>
+                    </div>
+                    <div class="">
+                      <input id="IQT" name="IQT" class="" type="checkbox">
+                      <label for="IQT">IQT</label>
+                    </div>
+                    <div class="">
+                      <input id="Travel Nursing" name="Travel Nursing" class="" type="checkbox">
+                      <label for="Travel Nursing">Travel Nursing</label>
+                    </div>
+                    <div class="">
+                      <input id="Other" name="Other" class="" type="checkbox">
+                      <label for="Other">Other</label>
+                    </div>
+                  </fieldset>
+                  
+                  <div class="mb-4">
+                    <label for="course" class="form-label fw-bold">If visiting for training, please specify your course number and start date in additional info to best assess availability and roommate alignment:</label>
+                    <textarea id="course" rows="3" name="message" class="form-control" type="text" placeholder=""></textarea>
                   </div>
                   <div class="mb-4">
-                    <!-- <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label> -->
-                    <input id="subscribeSubject" class="form-control" type="text" placeholder="Subject" />
+                    <label for="addl" class="form-label fw-bold">Additional Information:</label>
+                    <textarea id="addl" rows="7" name="message" class="form-control" type="text" placeholder=""></textarea>
                   </div>
-                  <div class="mb-4">
-                    <!-- <label for="subscribeMessage" class="form-label fw-bold">Enter your email address:</label> -->
-                    <textarea id="subscribeMessage" class="form-control" type="text" placeholder="Message"></textarea>
-                  </div>
+
                   <div class="container-xl position-relative text-center">
-                    <button type="submit" class="btn btn-success px-5 fw-bold">Submit</button>
+                    <button type="submit" name="submit" class="btn btn-success px-5 fw-bold">Submit</button>
                   </div>
                 </form>
               </div>
@@ -373,7 +412,7 @@
               </p>
 
               <p class="mb-1 w-md-75 w-lg-100 ps-sm-5 ps-lg-0">Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
-                <br>Email: inquire@ascensionhg.com</p>
+                <br>Email: inquire@staycrewnest.com</p>
             </div>
             <!-- /.col-12 col-md-5 col-lg-4 pe-lg-5 -->
 
@@ -575,7 +614,7 @@
         window.netlifyIdentity.on("init", user => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
+              document.location.href = "/static/admin/";
             });
           }
         });

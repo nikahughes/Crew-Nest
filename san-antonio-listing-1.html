@@ -256,7 +256,7 @@
             <div class="mb-5 me-lg-3">
               <h3 class="mb-4 fs-5">About</h3>
 
-              <p>This young San Antonio home is centrally located midway between Ft Sam Houston and Randolph AFB. It is less than 20 minutes to the Riverwalk and downtown amenities! 
+              <p>The Crew Nest at Windcrest is centrally located midway between Ft Sam Houston and Randolph AFB. It is less than 20 minutes to the Riverwalk and downtown amenities! 
                 <br>
                 <br>Ideal for mid-term rental needs of  pipeline students and travel nurses, your room will come fully furnished, and has a separate keypad for privacy. In addition to the standard living, dining, and bedrooms there is an office to offer additional space and quiet for studying, and a loft upstairs perfect for game night!
                 <br>
@@ -266,13 +266,80 @@
 
             <!-- /.mb-5 me-lg-3 -->
             
-            <div class="sticky-top pt-6 mt-n6 mb-4 zi-1">
+            <!-- FORM POP UP -->
+
+
+            <!-- <div class="sticky-top pt-6 mt-n6 mb-4 zi-1">
               <div class="container-xl position-relative text-center">
-                <p>
+                <div class="container-xl position-relative text-center">
+                  <button type="button" name="book now" onclick="popupForm();" class="btn btn-success px-5 fw-bold">Book Now</button>
+                </div> -->
+                <!-- <p>
+                  
                   <a target="_blank" href="#" class="btn btn-success px-5 fw-bold">Book</a>
-                </p>
+                </p> -->
+                <!-- <div class="row justify-content-center py-5 py-lg-6">
+                  <div class="col-12 col-lg-5 section-content">
+                    <div class="p-8 rounded ">
+                      <form id='bookingForm' class="mb-0" name="Contact Us" method="post" data-netlify="true">
+                        <label for="subscribeEmail" class="form-label fw-bold fs-3 text-center section-title mb-3">Book now</label>
+                        <div class="mb-4">
+                          <label for="subscribeEmail" class="form-label fw-bold">Name:</label>
+                          <input id="subscribeName" name="name" class="form-control" type="text" placeholder="" />
+                        </div>
+                        <div class="mb-4">
+                          <label for="subscribeEmail" class="form-label fw-bold">Email:</label>
+                          <input id="subscribeEmail" name="email" class="form-control" type="email" placeholder="" />
+                        </div> -->
+                        <!-- <div class="mb-4">
+                          <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label>
+                          <input id="subscribeSubject" name="subject" class="form-control" type="text" placeholder="Subject" />
+                        </div> -->
+                        <!-- <fieldset class="mb-4">
+                          <label for="subscribeEmail" class="form-label fw-bold">Reason for Visit?</label> -->
+                          <!-- <legend>Reason for Visit?</legend> -->
+
+                          <!-- <div class="">
+                            <input id="RIQ/RFC" name="RIQ/RFC" class="" type="checkbox">
+                            <label for="RIQ/RFC">RIQ/RFC</label>
+                          </div>
+                          <div class="">
+                            <input id="BSOC" name="BSOC" class="" type="checkbox">
+                            <label for="BSOC">BSOC</label>
+                          </div>
+                          <div class="">
+                            <input id="IQT" name="IQT" class="" type="checkbox">
+                            <label for="IQT">IQT</label>
+                          </div>
+                          <div class="">
+                            <input id="Travel Nursing" name="Travel Nursing" class="" type="checkbox">
+                            <label for="Travel Nursing">Travel Nursing</label>
+                          </div>
+                          <div class="">
+                            <input id="Other" name="Other" class="" type="checkbox">
+                            <label for="Other">Other</label>
+                          </div>
+                        </fieldset> -->
+                        
+                        <!-- <div class="mb-4">
+                          <label for="course" class="form-label fw-bold">If visiting for training, please specify your course number and start date in additional info to best assess availability and roommate alignment:</label>
+                          <textarea id="course" rows="3" name="message" class="form-control" type="text" placeholder=""></textarea>
+                        </div>
+                        <div class="mb-4">
+                          <label for="addl" class="form-label fw-bold">Additional Information:</label>
+                          <textarea id="addl" rows="7" name="message" class="form-control" type="text" placeholder=""></textarea>
+                        </div>
+
+                        <div class="container-xl position-relative text-center">
+                          <button type="submit" name="submit" class="btn btn-success px-5 fw-bold">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div> -->
+                  <!-- /.bg-light p-5 rounded -->
+                <!-- </div>
               </div>
-            </div>
+            </div> -->
             
             <div class="mb-5 me-lg-3">
               <h3 class="mb-4 fs-5">Amenities</h3>
@@ -396,6 +463,82 @@
     </section>
     <!-- #listing-detail-1.section pb-5 pb-lg-6 -->
 
+    <section id="subscribe-1" class="section py-5 py-lg-6">
+      <div class="bg bg-img position-absolute bg-secondary o-10" data-bg-img=".img"></div>
+      <!-- /.bg bg-img position-absolute -->
+        <div class="container-xl position-relative">
+          <header class="section-header mb-5">
+            <h2 class="fs-3 text-center section-title mb-3">Book</h2>
+          </header>
+          <!-- /.section-header mb-4 visually-hidden -->
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 section-content">
+              <div class="p-8 rounded">
+              
+                <form class="mb-0" name="Contact Us" method="post" data-netlify="true">
+                  <div class="mb-4">
+                    <label for="subscribeEmail" class="form-label fw-bold">Name:</label>
+                    <input id="subscribeName" name="name" class="form-control" type="text" placeholder="" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="subscribeEmail" class="form-label fw-bold">Email:</label>
+                    <input id="subscribeEmail" name="email" class="form-control" type="email" placeholder="" />
+                  </div>
+                  <!-- <div class="mb-4">
+                    <label for="subscribeSubject" class="form-label fw-bold">Enter your email address:</label>
+                    <input id="subscribeSubject" name="subject" class="form-control" type="text" placeholder="Subject" />
+                  </div> -->
+                  <fieldset class="mb-4">
+                    <label for="subscribeEmail" class="form-label fw-bold">Reason for Visit?</label>
+                    <!-- <legend>Reason for Visit?</legend> -->
+
+                    <div class="">
+                      <input id="RIQ/RFC" name="RIQ/RFC" class="" type="checkbox">
+                      <label for="RIQ/RFC">RIQ/RFC</label>
+                    </div>
+                    <div class="">
+                      <input id="BSOC" name="BSOC" class="" type="checkbox">
+                      <label for="BSOC">BSOC</label>
+                    </div>
+                    <div class="">
+                      <input id="IQT" name="IQT" class="" type="checkbox">
+                      <label for="IQT">IQT</label>
+                    </div>
+                    <div class="">
+                      <input id="Travel Nursing" name="Travel Nursing" class="" type="checkbox">
+                      <label for="Travel Nursing">Travel Nursing</label>
+                    </div>
+                    <div class="">
+                      <input id="Other" name="Other" class="" type="checkbox">
+                      <label for="Other">Other</label>
+                    </div>
+                  </fieldset>
+                  
+                  <div class="mb-4">
+                    <label for="course" class="form-label fw-bold">If visiting for training, please specify your course number and start date in additional info to best assess availability and roommate alignment:</label>
+                    <textarea id="course" rows="3" name="message" class="form-control" type="text" placeholder=""></textarea>
+                  </div>
+                  <div class="mb-4">
+                    <label for="addl" class="form-label fw-bold">Additional Information:</label>
+                    <textarea id="addl" rows="7" name="message" class="form-control" type="text" placeholder=""></textarea>
+                  </div>
+
+                  <div class="container-xl position-relative text-center">
+                    <button type="submit" name="submit" class="btn btn-success px-5 fw-bold">Book</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.bg-light p-5 rounded -->
+          </div>
+          <!-- /.col-12 col-lg-5 section-content -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-xl position-relative -->
+    </section>
+    <!-- #subscribe-1.section pb-6 mt-n4 mt-lg-n5 mt-xl-n6 -->
+
 
     <footer class="">
       <div id="footer-1" class="section py-lg-6">
@@ -410,7 +553,7 @@
               </p>
 
               <p class="mb-1 w-md-75 w-lg-100 ps-sm-5 ps-lg-0">Mailing Address: 100 Springdale Rd A3, PMB 128, Cherry Hill, NJ 08003
-                <br>Email: inquire@ascensionhg.com</p>
+                <br>Email: inquire@staycrewnest.com</p>
             </div>
             <!-- /.col-12 col-md-5 col-lg-4 pe-lg-5 -->
 
@@ -459,7 +602,7 @@
       <!-- #footer-bottom-1.section py-3 -->
     </footer>
 
-    
+
                 
 
     <div class="modal fade" id="userSignInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">

@@ -3,6 +3,9 @@ const isInViewport = function(element) {
     return childRectTop.top >= 0 && childRectTop.left >= 0 && childRectTop.bottom <= (window.innerHeight || document.documentElement.clientHeight) && childRectTop.right <= (window.innerWidth || document.documentElement.clientWidth);
 };
 
+function popupForm(){
+    document.getElementById('bookingForm').style.display = 'block';
+}
 const isElExists = function(element) {
     return typeof element != "undefined" && element != null ? true : false;
 };
