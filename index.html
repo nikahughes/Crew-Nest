@@ -416,7 +416,7 @@
             <div class="col-12 col-lg-5 section-content">
               <div class="p-8 rounded">
               
-                <form class="mb-0" name="Contact Us" method="post" data-netlify="true">
+                <form class="mb-0" name="Contact Us" method="post" action="formaction.php">
                   <div class="mb-4">
                     <label for="subscribeEmail" class="form-label fw-bold">Name:</label>
                     <input id="subscribeName" name="name" class="form-control" type="text" placeholder="" />
@@ -461,11 +461,11 @@
                   </div>
                   <div class="mb-4">
                     <label for="addl" class="form-label fw-bold">Additional Information:</label>
-                    <textarea id="addl" rows="7" name="message" class="form-control" type="text" placeholder=""></textarea>
+                    <textarea id="addl" rows="7" name="additional" class="form-control" type="text" placeholder=""></textarea>
                   </div>
 
                   <div class="container-xl position-relative text-center">
-                    <button type="submit" name="submit" class="btn btn-success px-5 fw-bold">Submit</button>
+                    <button id="send" type="submit" name="submit" class="btn btn-success px-5 fw-bold">Submit</button>
                   </div>
                 </form>
               </div>
